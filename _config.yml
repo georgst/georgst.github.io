@@ -1,0 +1,56 @@
+title: "Georg Stadler"
+description: "Applied & Computational Mathematics — Bayesian inverse problems • PDE-constrained optimization • UQ"
+url: "https://georgst.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.0"
+
+timezone: "America/New_York"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-scholar
+
+author:
+  name: "Georg Stadler"
+  avatar: "/assets/img/avatar.jpg"
+  bio: "Professor of Mathematics, Courant Institute of Mathematical Sciences, NYU"
+  location: "New York, USA"
+  links:
+    - label: Email
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:stadler@cims.nyu.edu"
+    - label: Google Scholar
+      icon: "ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=pTbnj1IAAAAJ&hl=en"
+    - label: GitHub
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/georgst"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope: { path: "", type: pages }
+    values: { layout: single }
+
+minimal_mistakes_skin: "default"
+permalink: /:categories/:title/
+search: true
+
+scholar:
+  style: apa
+  locale: en
+  sort_by: year, month
+  order: descending
+  bibliography: _bibliography/references.bib
+  bibliography_template: bib
+  source: _bibliography
+  details_dir: _publications
+  query: "@*"
+
+atom_feed:
+  hide: false
